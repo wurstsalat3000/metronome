@@ -25,5 +25,4 @@ Provides: metronome-xmpp-server, metronome
 Conflicts: prosody-xmpp-server, prosody
 Replaces: prosody-xmpp-server, prosody
 Description: Lightweight XMPP server with advanced microblogging features
- Metronome IM is a simple-to-use XMPP server initiated as a fork of prosody. It
- offers better performances under load.
+ Metronome IM is a simple-to-use XMPP server initiated as a fork of prosody.

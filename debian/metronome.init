@@ -42,7 +42,7 @@ start_metronome () {
 	mkdir -p `dirname $PIDFILE`
 	chown metronome:adm `dirname $PIDFILE`
 	if start-stop-daemon --start --quiet --pidfile "$PIDFILE" \
-		--chuid "$USER" --oknodo --user "$USER" --name lua5.1 \
+		--chuid "$USER" --oknodo --user "$USER" --name lua5.2 \
 		$(start_opts) --startas "$DAEMON"; 
 	then
 		return 0
@@ -53,7 +53,7 @@ start_metronome () {
 
 stop_metronome () {
 	if start-stop-daemon --stop --quiet --retry 30 \
-		--oknodo --pidfile "$PIDFILE" --user "$USER" --name lua5.1; 
+		--oknodo --pidfile "$PIDFILE" --user "$USER" --name lua5.2; 
 	then
 		return 0
 	else
